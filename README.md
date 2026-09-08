@@ -1,4 +1,3 @@
-viva.
 IoT Based Industrial Device Control and Automation System
 1. Objective
 
@@ -155,29 +154,32 @@ The same concept can be used for other suitable electrical devices such as fans,
 └────┬─────┘
      │
      ▼
-┌──────────────┐
-│ NodeMCU      │
-│ ESP8266      │
-│ Wi-Fi Module │
-└──────┬───────┘
+┌────────────────┐
+│ NodeMCU ESP8266│
+│   Wi-Fi Module │
+└──────┬─────────┘
        │ UART
        ▼
-┌──────────────┐
-│   LPC2129    │
-│ Microcontrol │
-└──────┬───────┘
+┌────────────────┐
+│    LPC2129     │
+│ Microcontroller│
+└──────┬─────────┘
        │
        ▼
-┌──────────────────┐
-│ 4-Channel Relay  │
-└─┬────┬────┬────┬─┘
+┌────────────────┐
+│ 4-Channel Relay│
+│     Module     │
+└─┬────┬────┬────┬┘
   │    │    │    │
   ▼    ▼    ▼    ▼
  B1   B2   B3   B4
 
-       ┌──────────┐
-       │ 16×2 LCD │
-       └──────────┘
+       │
+       ▼
+┌──────────────┐
+│   16×2 LCD   │
+└──────────────┘
+
 7. Working Principle
 
 The system works based on IoT communication followed by UART-based device control.
