@@ -27,42 +27,42 @@ Main operation
 Arduino Cloud → ESP8266 NodeMCU → LPC2129 → 4-Channel Relay → Bulbs
 
 4. Simple Block Diagram
-                 ┌─────────────────────┐
-                 │    Arduino Cloud    │
-                 │   IoT Control App   │
-                 └──────────┬──────────┘
-                            │
-                         Internet
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │   ESP8266 NodeMCU   │
-                 │   Wi-Fi / IoT Unit  │
-                 └──────────┬──────────┘
-                            │
-                    Control Commands
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │       LPC2129       │
-                 │  Main Controller    │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │   4-Channel Relay   │
-                 │       Module        │
-                 └────┬────┬────┬────┬─┘
-                      │    │    │    │
-                     CH1  CH2  CH3  CH4
-                      │    │    │    │
-                      ▼    ▼    ▼    ▼
-                    ┌──┐ ┌──┐ ┌──┐ ┌──┐
-                    │B1│ │B2│ │B3│ │B4│
-                    └──┘ └──┘ └──┘ └──┘
-                     Bulb  Bulb  Bulb  Bulb
-
-6. Block Diagram Explanation
+                 ┌─────────────────────┐                                                                                                                                                  
+                 │    Arduino Cloud    │                                                                                                                                                  
+                 │   IoT Control App   │                                                                                                                                                  
+                 └──────────┬──────────┘                                                                                                                                                  
+                            │                                                                                                                                                             
+                         Internet                                                                                                                                                         
+                            │                                                                                                                                                             
+                            ▼                                                                                                                                                             
+                 ┌─────────────────────┐                                                                                                                                                  
+                 │   ESP8266 NodeMCU   │                                                                                                                                                  
+                 │   Wi-Fi / IoT Unit  │                                                                                                                                                  
+                 └──────────┬──────────┘                                                                                                                                                  
+                            │                                                                                                                                                             
+                    Control Commands                                                                                                                                                      
+                            │                                                                                                                                                             
+                            ▼                                                                                                                                                             
+                 ┌─────────────────────┐                                                                                                                                                  
+                 │       LPC2129       │                                                                                                                                                  
+                 │  Main Controller    │                                                                                                                                                  
+                 └──────────┬──────────┘                                                                                                                                                  
+                            │                                                                                                                                                             
+                            ▼                                                                                                                                                             
+                 ┌─────────────────────┐                                                                                                                                                  
+                 │   4-Channel Relay   │                                                                                                                                                  
+                 │       Module        │                                                                                                                                                  
+                 └────┬────┬────┬────┬─┘                                                                                                                                                  
+                      │    │    │    │                                                                                                                                                    
+                     CH1  CH2  CH3  CH4                                                                                                                                                   
+                      │    │    │    │                                                                                                                                                    
+                      ▼    ▼    ▼    ▼                                                                                                                                                    
+                    ┌──┐ ┌──┐ ┌──┐ ┌──┐                                                                                                                                                   
+                    │B1│ │B2│ │B3│ │B4│                                                                                                                                                   
+                    └──┘ └──┘ └──┘ └──┘                                                                                                                                                   
+                     Bulb  Bulb  Bulb  Bulb                                                                                                                                               
+                                                                                                                                                                                          
+5. Block Diagram Explanation
 
 Arduino Cloud
 Arduino Cloud is used as the IoT control platform. The user can provide ON/OFF commands for the four bulbs through the cloud interface.
