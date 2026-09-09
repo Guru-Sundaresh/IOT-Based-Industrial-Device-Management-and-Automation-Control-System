@@ -26,7 +26,7 @@ A 4-channel relay module is connected to the LPC2129. Each relay channel control
 Main operation
 Arduino Cloud → ESP8266 NodeMCU → LPC2129 → 4-Channel Relay → Bulbs
 
-4. Simple Block Diagram
+4. Simple Block Diagram                                                                                                                                                                   
                  ┌─────────────────────┐                                                                                                                                                  
                  │    Arduino Cloud    │                                                                                                                                                  
                  │   IoT Control App   │                                                                                                                                                  
@@ -62,7 +62,7 @@ Arduino Cloud → ESP8266 NodeMCU → LPC2129 → 4-Channel Relay → Bulbs
                     └──┘ └──┘ └──┘ └──┘                                                                                                                                                   
                      Bulb  Bulb  Bulb  Bulb                                                                                                                                               
                                                                                                                                                                                           
-5. Block Diagram Explanation
+6. Block Diagram Explanation
 
 Arduino Cloud
 Arduino Cloud is used as the IoT control platform. The user can provide ON/OFF commands for the four bulbs through the cloud interface.
