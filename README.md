@@ -27,41 +27,8 @@ Main operation
 Arduino Cloud → ESP8266 NodeMCU → LPC2129 → 4-Channel Relay → Bulbs
 
 4. Simple Block Diagram                                                                                                                                                                   
-                 ┌─────────────────────┐                                                                                                                                                  
-                 │    Arduino Cloud    │                                                                                                                                                  
-                 │   IoT Control App   │                                                                                                                                                  
-                 └──────────┬──────────┘                                                                                                                                                  
-                            │                                                                                                                                                             
-                         Internet                                                                                                                                                         
-                            │                                                                                                                                                             
-                            ▼                                                                                                                                                             
-                 ┌─────────────────────┐                                                                                                                                                  
-                 │   ESP8266 NodeMCU   │                                                                                                                                                  
-                 │   Wi-Fi / IoT Unit  │                                                                                                                                                  
-                 └──────────┬──────────┘                                                                                                                                                  
-                            │                                                                                                                                                             
-                    Control Commands                                                                                                                                                      
-                            │                                                                                                                                                             
-                            ▼                                                                                                                                                             
-                 ┌─────────────────────┐                                                                                                                                                  
-                 │       LPC2129       │                                                                                                                                                  
-                 │  Main Controller    │                                                                                                                                                  
-                 └──────────┬──────────┘                                                                                                                                                  
-                            │                                                                                                                                                             
-                            ▼                                                                                                                                                             
-                 ┌─────────────────────┐                                                                                                                                                  
-                 │   4-Channel Relay   │                                                                                                                                                  
-                 │       Module        │                                                                                                                                                  
-                 └────┬────┬────┬────┬─┘                                                                                                                                                  
-                      │    │    │    │                                                                                                                                                    
-                     CH1  CH2  CH3  CH4                                                                                                                                                   
-                      │    │    │    │                                                                                                                                                    
-                      ▼    ▼    ▼    ▼                                                                                                                                                    
-                    ┌──┐ ┌──┐ ┌──┐ ┌──┐                                                                                                                                                   
-                    │B1│ │B2│ │B3│ │B4│                                                                                                                                                   
-                    └──┘ └──┘ └──┘ └──┘                                                                                                                                                   
-                     Bulb  Bulb  Bulb  Bulb                                                                                                                                               
-                                                                                                                                                                                          
+          <img width="1145" height="1374" alt="ChatGPT Image Sep 9, 2026, 01_05_22 PM" src="https://github.com/user-attachments/assets/94033ed6-8328-42e1-8637-5ba6673eb166" />
+                                                                                                                                                                                             
 6. Block Diagram Explanation
 
 Arduino Cloud
